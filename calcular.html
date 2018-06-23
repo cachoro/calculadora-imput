@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+        .container{
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        </style>
+        <script type"text/javascript">  
+            function calcular(){
+                var n1 = parseInt(document.getElementById("num1").value);
+                var n2 = parseInt(document.getElementById("num2").value);
+                var operacao = document.getElementById("operacao").value;
+                    if (operacao=="+"){
+                        alert(n1+n2);
+                    }
+
+                    if (operacao=="-"){
+                        alert(n1-n2);
+                    }
+
+                    if (operacao=="*"){
+                        alert(n1*n2);
+                    }
+
+                    if (operacao=="/"){
+                        alert(n1/n2);
+                    }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <center>
+        <div class="container">
+            <div>
+                <label for="num1">numero 1</label>
+                <input type="text" id="num1"><br>
+                <label for="num2">numero 2</label>
+                <input type="text" id="num2"><br>
+                <label for="operacao">Operaçao</label>
+                <input type="text" id="operacao"><br>
+                <button onclick="calcular()">calcular</button>
+            </div>
+        </div>
+        </center>
+    </body>
+</html>
